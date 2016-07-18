@@ -1,0 +1,30 @@
+{
+  "name": "women-of-marvel",
+  "version": "1.0.0",
+  "description": "A compilation of female super heroes from Marvel's universe, this application uses Angular2 following all tutorials from: https://angular.io/docs/ts/latest/tutorial/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npm run lite\" ",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gdomiciano:geisy1998@github.com/gdomiciano/WomenOfMarvel.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gdomiciano/WomenOfMarvel/issues"
+  },
+  "homepage": "https://github.com/gdomiciano/WomenOfMarvel#readme",
+  "devDependencies": {
+    "compass": "^0.1.1",
+    "lite-server": "^2.2.0",
+    "concurrently": "^2.0.0"
+  },
+  "dependencies": {
+    "angular": "^1.5.7"
+  }
+}

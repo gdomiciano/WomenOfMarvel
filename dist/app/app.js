@@ -1,1 +1,0 @@
-var women=angular.module("women",[]);

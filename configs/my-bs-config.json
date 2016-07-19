@@ -1,0 +1,3 @@
+{
+  "files": ["./src/**/**/*.{html,htm,scss,js,jpg,png,eot,ttf,woff,woff2,svg}"]
+}

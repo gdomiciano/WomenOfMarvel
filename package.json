@@ -1,7 +1,7 @@
 {
   "name": "women-of-marvel",
   "version": "1.0.0",
-  "description": "A compilation of female super heroes from Marvel's universe, this application uses Angular1.5.x and node scripts.
+  "description": "A compilation of female super heroes from Marvel's universe, this application uses Angular1.5.x and node scripts."
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

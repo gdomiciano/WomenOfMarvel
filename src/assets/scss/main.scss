@@ -1,4 +1,9 @@
-body{
-	background: url(../img/bgHome.jpg) center -30px;
-	background-size: cover;
-} 
+@import 'compass',
+'helpers/font-awesome-imports',
+
+'fonts',
+'vars',
+'palette',
+'general',
+'header'
+;

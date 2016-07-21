@@ -4,15 +4,14 @@
   "description": "A compilation of female super heroes from Marvel's universe, this application uses Angular1.5.x and node scripts.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "concurrently \"npm run lite\" \"npm run compass\" \"npm run uglify\" \"npm run imagemin\" \"npm run copy:fonts\" \"npm run copy:html\" ",
     "clean": "rm -R dist && mkdir dist",
-    "lite": "lite-server",
-    "compass": "node-sass --output-style compressed -o dist/assets/css  src/assets/scss",
+    "lite": "lite-server -c config/my-bs-config.json",
+    "compass": "compass compile ./ ; compass watch ./",
     "uglify": "mkdir -p dist/app && uglifyjs src/app/*.js -m -o dist/app/app.js && uglifyjs src/app/*.js -m -c -o dist/app/app.min.js",
     "imagemin": "imagemin src/assets/img/* -o dist/assets/img",
     "copy:fonts": "copy src/assets/fonts/**/*.{ttf,eot,woff,woff2,svg} ./dist/assets/fonts/",
-    "copy:html": "copy {*.html,src/**/**/*.html} ./dist/"
+    "copy:html": "copy {src/**/**/*.html} ./dist/"
   },
   "repository": {
     "type": "git",
@@ -35,6 +34,7 @@
     "uglify-js": "^2.7.0"
   },
   "dependencies": {
+    "requirejs": "^2.2.0",
     "angular": "^1.5.7"
   }
 }
